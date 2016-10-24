@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Kostenabschetzung</title>
+		<link href ="bootstap/css/bootstap.css" rel="stylesheet">
+		<link href ="bootstap/css/bootstap.theme.css" rel="stylesheet">
+	</head>
+	<body>
+		<form name="demo" action="kosten.php" class="form horizontal">
+			<div id="box1" class="form-group">
+				<div>
+					<label>Fläche jeh stockwerk in qm:</label>
+					<input name="flaeche" type="nuber" id="flaeche" placeholder="-------">
+				</div>
+				<div>
+					<label>Stockwerköhe in qm:</label>
+					<input name="hoehe" type="nuber" id="hoehe" placeholder="-------">
+				</div>
+				<div>
+					<label>Anzahl der Stockwerke:<label>
+					<input name="anzahl" type="nuber" id="anzahl" placeholder="-------">
+				</div>
+			</div>
+			<div id="box2" class="form-group">
+				<h3>Baujahr des Sanirungsobjechts / Letzte Sanirung </h3>
+				<div>
+					<input type=radio name="jahr" value="1" checked="checked">
+					<label>vor 1950</label> 
+				</div>
+				<div>
+					<input type=radio name="jahr" value="2" >
+					<label>vor 1977</label>
+				</div>
+				<div>
+					<input type=radio name="jahr" value="3" >
+					<label>vor 1987</label>
+				</div>
+				<div>
+					<input type=radio name="jahr" value="4" >
+					<label>vor 1998</label>
+				</div>
+				<div>
+					<input type=radio name="jahr" value="5" >
+					<label>vor 2002</label>
+				</div>
+				<div>
+					<input type=radio name="jahr" value="6" >
+					<label>vor 2009</label>
+				</div>
+			</div>
+			<div id="box3" class="form-group">
+				<div>
+					<input type=submit name="absenden" value="Absenden" >
+				</div>
+				<div>
+					<input type=reset name="zurücksetzen" value="Zurücksetzen" >
+				</div>
+			</div>
+		</form>
+		<script src="bootstap/js/bootstap.js">
+	</body>
+</html>
